@@ -31,4 +31,4 @@ const PassSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-export default Password = mongoose.model("Password", PassSchema);
+export const Password = mongoose.model("Password", PassSchema);

@@ -18,21 +18,22 @@ const TodoSchema = new mongoose.Schema(
             required: true,
             enum: ["Completed", "Pending"],
             trim: true,
+            default:'Pending'
         },
         uniqueID: {
             type: String,
             required: true,
-            default: "Default",
+            default: "code",
             trim: true,
         },
     },
     { timestamps: true }
 );
 
-TodoSchema.pre("save", (next) => {
+TodoSchema.pre("save", function(next){
     this.uniqueID = nanoid(10);
 
     next();
 });
 
-export default Todo = mongoose.model("Todo", TodoSchema);
+export const Todo = mongoose.model("Todo", TodoSchema);
