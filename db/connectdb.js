@@ -7,9 +7,9 @@ const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URI);
 
-        console.log("Connected to Database !");
+        console.log("Database connected !");
     } catch (err) {
-        console.log("Error: ", err);
+        console.log("Error connecting to DB: ", err.message);
         process.exit(0);
     }
 };
@@ -18,9 +18,9 @@ const disconnectDB = async () => {
     try {
         await mongoose.disconnect();
 
-        console.log("Disconnected from Database !");
+        console.log("Database disconnected !");
     } catch (err) {
-        console.log("Error: ", err);
+        console.log("Error disconnecting from DB: ", err.message);
         process.exit(0);
     }
 };
