@@ -18,7 +18,7 @@ const TodoSchema = new mongoose.Schema(
             required: true,
             enum: ["Completed", "Pending"],
             trim: true,
-            default:'Pending'
+            default: "Pending",
         },
         uniqueID: {
             type: String,
@@ -30,7 +30,7 @@ const TodoSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-TodoSchema.pre("save", function(next){
+TodoSchema.pre("save", function (next) {
     this.uniqueID = nanoid(10);
 
     next();

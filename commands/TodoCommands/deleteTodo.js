@@ -43,6 +43,4 @@ const deleteTodo = async () => {
     }
 };
 
-deleteTodo();
-
-export { deleteTodo };
+export { deleteTodo, askUniqueId };

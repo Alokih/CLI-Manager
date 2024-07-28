@@ -56,5 +56,4 @@ const addTodo = async () => {
     }
 };
 
-addTodo();
 export default addTodo;
