@@ -35,4 +35,6 @@ const listTodo = async () => {
     }
 };
 
+listTodo();
+
 export default listTodo;
