@@ -39,7 +39,7 @@ const updateTodo = async () => {
 
         const todo = await Todo.findOne({ uniqueID: uniqueId.uniqueID });
 
-        if (!Todo) {
+        if (!todo) {
             console.log("No Todo found with the given uniqueID !");
         } else {
             console.log(
@@ -63,5 +63,7 @@ const updateTodo = async () => {
         process.exit(0);
     }
 };
+
+updateTodo();
 
 export { updateTodo };
