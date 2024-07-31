@@ -72,5 +72,4 @@ const updatePass = async () => {
     }
 };
 
-updatePass();
-export { updatePass };
+export default updatePass;

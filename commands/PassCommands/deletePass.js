@@ -35,5 +35,4 @@ const deletePass = async () => {
     }
 };
 
-deletePass();
-export { deletePass, askWebsiteName };
+export default deletePass;

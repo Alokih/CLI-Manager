@@ -1,22 +1,23 @@
 {
-  "name": "cli-manager",
-  "version": "1.0.0",
-  "description": "CLI Manager Project",
-  "main": "index.js",
-  "type": "module",
-  "preferGlobal": true,
-  "bin": "./index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "commander": "^12.1.0",
-    "dotenv": "^16.4.5",
-    "inquirer": "^10.1.2",
-    "mongoose": "^8.5.1",
-    "nanoid": "^5.0.7"
-  }
+    "name": "cli-manager",
+    "version": "1.0.0",
+    "description": "CLI Manager Project",
+    "main": "index.js",
+    "type": "module",
+    "bin": {
+        "cliManager": "./index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^12.1.0",
+        "dotenv": "^16.4.5",
+        "inquirer": "^10.1.2",
+        "mongoose": "^8.5.1",
+        "nanoid": "^5.0.7"
+    }
 }

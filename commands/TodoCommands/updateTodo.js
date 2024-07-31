@@ -1,7 +1,24 @@
 import { connectDB, disconnectDB } from "../../db/connectdb.js";
 import { Todo } from "../../schema/TodoSchema.js";
-import { askUniqueId } from "./deleteTodo.js";
 import inquirer from "inquirer";
+
+const askUniqueId = async () => {
+    try {
+        const res = await inquirer.prompt([
+            {
+                name: "uniqueID",
+                type: "input",
+                message: "Enter UniqueID of the Todo: ",
+            },
+        ]);
+
+        res.uniqueID = res.uniqueID.trim();
+
+        return res;
+    } catch (err) {
+        console.log("Something went wrong , Error: ", err.message);
+    }
+};
 
 const updateDetails = async () => {
     try {
@@ -64,6 +81,4 @@ const updateTodo = async () => {
     }
 };
 
-updateTodo();
-
-export { updateTodo };
+export default updateTodo;

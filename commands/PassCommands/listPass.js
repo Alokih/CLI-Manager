@@ -37,5 +37,4 @@ const listPass = async () => {
     }
 };
 
-listPass();
 export default listPass;

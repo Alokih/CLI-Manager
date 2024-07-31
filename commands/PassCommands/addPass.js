@@ -75,6 +75,4 @@ const addPass = async () => {
     }
 };
 
-addPass();
-
-export { addPass };
+export default addPass;

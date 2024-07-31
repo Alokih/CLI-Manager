@@ -43,4 +43,4 @@ const deleteTodo = async () => {
     }
 };
 
-export { deleteTodo, askUniqueId };
+export default deleteTodo;
