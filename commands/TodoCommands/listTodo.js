@@ -23,6 +23,9 @@ const listTodo = async () => {
                         "\n" +
                         "Description: " +
                         todo.description +
+                        "\n" +
+                        "Status: " +
+                        todo.status +
                         "\n"
                 );
             });
