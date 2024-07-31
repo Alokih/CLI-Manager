@@ -1,12 +1,16 @@
 # CLI Manager
 
-CLI Manager is a command-line tool for managing passwords and todos efficiently.
+CLI Manager is a command-line tool for managing Passwords and Todos efficiently.
 
 ## Features
 
 - Manage Passwords and Todos from your terminal
 - Secure storage of sensitive information
 - Easy-to-use interactive interface
+
+## Video Demo
+[](https://github.com/user-attachments/assets/a4e78028-21e6-49c8-aa88-3d00fabf0e3c)
+
 
 ## Installation
 
